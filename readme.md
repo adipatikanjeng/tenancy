@@ -60,5 +60,10 @@ Example
 ```sh
 php artisan johndoe johndoe@gmail.com johndoe.net
 ```
+To access in local, set domain to `etc/hosts`
+```sh
+127.0.0.1     johndoe.net
+```
+
 
 
