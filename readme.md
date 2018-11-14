@@ -54,12 +54,19 @@ sudo systemctl restart nginx
 ```
 Finnaly, create tenat
 ```sh
-php artisan name email domain
+php artisan tenant:create name email domain
 ```
+
 Example
 ```sh
-php artisan johndoe johndoe@gmail.com johndoe.net
+php artisan tenant:create johndoe johndoe@gmail.com johndoe.net
 ```
+
+Finnaly, create multiple tenats
+```sh
+php artisan tenants:create
+```
+
 To access in local, set domain to `etc/hosts`
 ```sh
 127.0.0.1     johndoe.net
